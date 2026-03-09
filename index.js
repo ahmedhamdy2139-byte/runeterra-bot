@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, AttachmentBuilder } = require('discord.js');
-const Canvas = require('canvas');
+const { Canvas } = require("skia-canvas");
 
 const client = new Client({
   intents: [
@@ -75,5 +75,6 @@ Enjoy your stay in **Runeterra ⚔️**
   });
 
 });
+
 
 client.login("MTQ4MDU5MjkyNzE0NjM3NzMwOQ.Gp0iJs.8AOXkJnsJaOUPnPgfABawXX7AKWi_np3KYIHEc");
