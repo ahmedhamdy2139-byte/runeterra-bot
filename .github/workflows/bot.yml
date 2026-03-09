@@ -1,0 +1,23 @@
+name: Run Discord Bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm install
+
+      - run: node index.js
+        env:
+          TOKEN: ${{ MTQ4MDU5MjkyNzE0NjM3NzMwOQ.Gp0iJs.8AOXkJnsJaOUPnPgfABawXX7AKWi_np3KYIHEc }}
