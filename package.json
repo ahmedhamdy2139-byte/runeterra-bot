@@ -1,6 +1,6 @@
 {
   "name": "runeterra",
-  "version": "1.0.0",
+  "version": "1.0.0",https://github.com/ahmedhamdy2139-byte/runeterra-bot/blob/main/package.json
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,4 @@
   "type": "commonjs",
  "dependencies": {
   "discord.js": "^14.25.1",
-  "skia-canvas": "^0.9.41"
 }
