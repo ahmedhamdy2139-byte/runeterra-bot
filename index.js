@@ -34,5 +34,4 @@ Welcome to **Runeterra ⚔️**
 Enjoy your stay ✨`);
 });
 
-const TOKEN = process.env.TOKEN;
 client.login(TOKEN);
