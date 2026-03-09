@@ -10,7 +10,7 @@ const client = new Client({
 const TOKEN = process.env.TOKEN;
 
 client.once("ready", () => {
-  console.log(`✅ Logged in as ${client.user.tag}`);
+  console.log(`Logged in as ${client.user.tag}`);
 });
 
 client.on("guildMemberAdd", member => {
@@ -21,20 +21,17 @@ client.on("guildMemberAdd", member => {
 
   if (!channel) return;
 
-  channel.send(`
-🌍 **Welcome to Runeterra**
+  channel.send(`🌍 Welcome to Runeterra
 
 Hey ${member} 👋
 
-Welcome to **Runeterra ⚔️**  
-A place where gamers gather, play together, and build a legendary community. 🎮🔥
+Welcome to **Runeterra ⚔️**
 
 📜 Rules → #rule  
 🎭 Roles → #roles  
 💬 Chat → #chat  
 
-Enjoy your stay ✨
-`);
+Enjoy your stay ✨`);
 });
 
 client.login(TOKEN);
