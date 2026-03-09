@@ -3,11 +3,12 @@ name: Run Discord Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "0 */5 * * *"
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
 
     steps:
       - uses: actions/checkout@v3
@@ -16,15 +17,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install system libs
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+      - run: npm install
 
-      - name: Install npm packages
-        run: npm install
-
-      - name: Run bot
-        run: node index.js
+      - run: node index.js
         env:
           TOKEN: ${{ secrets.TOKEN }}
