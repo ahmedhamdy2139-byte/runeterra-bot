@@ -1,17 +1,12 @@
 {
-  "name": "runeterra-bot",
+  "name": "runeterra",
   "version": "1.0.0",
-  https://github.com/username/repo
-}
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
- "dependencies": {
-  "discord.js": "^14.25.1",
+  "dependencies": {
+    "discord.js": "^14.25.1"
+  }
 }
